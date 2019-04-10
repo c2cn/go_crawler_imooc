@@ -15,7 +15,7 @@ import (
 
 var rateLimit = time.Tick(10 *time.Millisecond)
 func Fetch(url string) ([]byte, error) {
-	<-rateLimit
+	//<-rateLimit
 	client := &http.Client{}
 
 	//提交请求
